@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Layout, { siteTitle } from './components/layout';
+import Link from 'next/link';
 
 function Home() {
   return (
@@ -29,10 +29,12 @@ function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>SpaceX Server Side &rarr;</h2>
-            <p>Using the SpaceX GraphQL api and rendering the content server side.</p>
-          </a>
+          <Link href='/spacex'>
+            <a className={styles.card}>
+              <h2>SpaceX Upcoming &rarr;</h2>
+              <p>Using the SpaceX GraphQL api and rendering the content server side.</p>
+            </a>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
