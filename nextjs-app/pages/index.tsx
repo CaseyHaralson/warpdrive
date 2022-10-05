@@ -15,7 +15,7 @@ function Home() {
           Warp Drive!
         </h1>
 
-        <p className={styles.description}>
+        <div className={styles.description}>
           Next.js with Apollo Graphql meets Python Flask
           <div>
             <small>
@@ -26,13 +26,13 @@ function Home() {
               would enjoy himself!
             </small>
           </div>
-        </p>
+        </div>
 
         <div className={styles.grid}>
           <Link href='/spacex'>
             <a className={styles.card}>
-              <h2>SpaceX Upcoming &rarr;</h2>
-              <p>Using the SpaceX GraphQL api and rendering the content server side.</p>
+              <h2>SpaceX Launches &rarr;</h2>
+              <p>Using a SpaceX GraphQL api and rendering the content server side.</p>
             </a>
           </Link>
 

@@ -1,0 +1,49 @@
+.launch {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.launchPatch {
+    text-align: right;
+}
+.launchPatch img {
+    width: 100%;
+    height: auto;
+}
+.launchPatch .missing {
+    text-align: center;
+    font-size: small;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border: 1px dashed lightgray;
+    color: lightgray;
+}
+
+.description {
+    font-size: smaller;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.launchDetails {
+    margin-left: 2rem;
+}
+.launchDetails .label {
+    font-weight: bold;
+    padding-right: 1rem;
+}
+.launchDetails a {
+    padding-left: 0;
+}
+
+.launchDetails hr {
+    max-width: 20%;
+    margin: 2rem auto;
+}
+
+.launchDetails table td {
+    padding: 1px;
+    vertical-align: middle;
+}
