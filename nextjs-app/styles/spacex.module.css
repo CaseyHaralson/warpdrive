@@ -37,12 +37,10 @@
 .launchDetails a {
     padding-left: 0;
 }
-
 .launchDetails hr {
     max-width: 20%;
     margin: 2rem auto;
 }
-
 .launchDetails table td {
     padding: 1px;
     vertical-align: middle;

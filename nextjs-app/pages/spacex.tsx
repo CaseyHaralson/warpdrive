@@ -12,7 +12,7 @@ function Launch({ launch }) {
         <div className={`row ${styles.launch}`}>
           <div className={`col-4 ${styles.launchPatch}`}>
 
-            {launch.links && launch.links.mission_patch_small ? (
+            {launch.links?.mission_patch_small ? (
               <img src={launch.links.mission_patch_small}></img>
             ) : (
               <div className={styles.missing}>missing mission patch</div>
@@ -29,7 +29,7 @@ function Launch({ launch }) {
             <div className={styles.launchDetails}>
               <table className='table table-borderless'><tbody>
 
-                {launch.launch_site && launch.launch_site.site_name_long ? (
+                {launch.launch_site?.site_name_long ? (
                   <tr>
                     <td className={styles.label}>Where:</td>
                     <td>{launch.launch_site.site_name_long}</td>
@@ -43,7 +43,7 @@ function Launch({ launch }) {
                   </tr>
                 ) : null}
 
-                {launch.links && launch.links.video_link ? (
+                {launch.links?.video_link ? (
                   <tr>
                     <td className={styles.label}>Video:</td>
                     <td>
@@ -62,28 +62,28 @@ function Launch({ launch }) {
 
               <table className='table table-borderless'><tbody>
                 
-                {launch.rocket && launch.rocket.rocket_name ? (
+                {launch.rocket?.rocket_name ? (
                   <tr>
                     <td className={styles.label}>Rocket:</td>
                     <td>{launch.rocket.rocket_name}</td>
                   </tr>
                 ) : null}
                 
-                {launch.rocket && launch.rocket.rocket && launch.rocket.rocket.description ? (
+                {launch.rocket?.rocket?.description ? (
                   <tr>
                     <td className={styles.label}>Description:</td>
                     <td>{launch.rocket.rocket.description}</td>
                   </tr>
                 ) : null}
 
-                {launch.rocket && launch.rocket.rocket && launch.rocket.rocket.cost_per_launch ? (
+                {launch.rocket?.rocket?.cost_per_launch ? (
                   <tr>
                     <td className={styles.label}>Cost / Launch:</td>
                     <td>{formatCurrency(launch.rocket.rocket.cost_per_launch)}</td>
                   </tr>
                 ) : null}
 
-                {launch.rocket && launch.rocket.rocket && launch.rocket.rocket.success_rate_pct ? (
+                {launch.rocket?.rocket?.success_rate_pct ? (
                   <tr>
                     <td className={styles.label}>Success %:</td>
                     <td>{launch.rocket.rocket.success_rate_pct}%</td>
