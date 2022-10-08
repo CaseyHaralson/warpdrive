@@ -57,21 +57,12 @@ function Home() {
             </a>
           </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Apollo Server &rarr;</h2>
-            <p>Some sort of GraphQL server made from open data?</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Python Flask Api &rarr;</h2>
-            <p>Probably just a simple api communication from the Next server to the Flask server.</p>
-          </a>
+          <Link href='/stocks'>
+            <a className={styles.card}>
+              <h2>Stock Values &rarr;</h2>
+              <p>Using GraphQL Yoga to read a fake database loaded by a Python server.</p>
+            </a>
+          </Link>
         </div>
       </main>
     </Layout>

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from './components/layout';
 import { GetServerSideProps } from 'next';
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import layoutStyles from '../styles/layout.module.css';
 import styles from '../styles/spacex.module.css';
 import { formatCurrency } from '../util/dataformatter'
