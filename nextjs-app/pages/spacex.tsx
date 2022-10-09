@@ -5,6 +5,7 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import layoutStyles from '../styles/layout.module.css';
 import styles from '../styles/spacex.module.css';
 import { formatCurrency } from '../util/dataformatter'
+import Image from 'next/image';
 
 
 function Launch({ launch }) {
@@ -13,7 +14,9 @@ function Launch({ launch }) {
           <div className={`col-4 ${styles.launchPatch}`}>
 
             {launch.links?.mission_patch_small ? (
-              <img src={launch.links.mission_patch_small}></img>
+              <Image width='1000' height='1000' 
+                src={launch.links.mission_patch_small} 
+                alt={`${launch.mission_name} mission patch`}></Image>
             ) : (
               <div className={styles.missing}>missing mission patch</div>
             )}
