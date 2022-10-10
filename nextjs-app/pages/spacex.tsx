@@ -51,8 +51,7 @@ function Launch({ launch }) {
                     <td className={styles.label}>Video:</td>
                     <td>
                       <a href={launch.links.video_link} 
-                        target='_blank'
-                        rel='noopener noreferrer'>
+                        target='_blank' rel='noopener noreferrer'>
                           {launch.links.video_link}
                       </a>
                     </td>

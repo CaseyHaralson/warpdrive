@@ -1,0 +1,19 @@
+.symbolFilter {
+    margin-bottom: 2rem;
+}
+
+.loadStock {
+    text-align: right;
+    margin-bottom: 5rem;
+}
+
+.loadStockModalDescription {
+    font-size: small;
+    margin-bottom: 2rem;
+}
+
+.loadStockModalErrors {
+    font-size: small;
+    margin-top: 1rem;
+    color: red;
+}
