@@ -6,6 +6,7 @@ import layoutStyles from '../styles/layout.module.css';
 import styles from '../styles/spacex.module.css';
 import { formatCurrency } from '../util/dataformatter'
 import Image from 'next/image';
+import { SPACEX_GRAPHQL_API } from '../app.config';
 
 
 function Launch({ launch }) {
@@ -131,7 +132,7 @@ function SpaceXPage({ launches }) {
 
 export const getServerSideProps: GetServerSideProps = async () => {
     const client = new ApolloClient({
-        uri: 'https://api.spacex.land/graphql/',
+        uri: SPACEX_GRAPHQL_API,
         cache: new InMemoryCache()
     });
 

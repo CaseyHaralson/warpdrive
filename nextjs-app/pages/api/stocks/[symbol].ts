@@ -1,9 +1,10 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { STOCK_SCRAPE_API } from "../../../app.config";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const { symbol } = req.query;
     if (req.method === 'POST') {
-        const result = await fetch(`http://127.0.0.1:5000/api/stocks/scrape/${symbol}`, { method: 'POST'});
+        const result = await fetch(`${STOCK_SCRAPE_API}${symbol}`, { method: 'POST'});
         
         if (result.ok) {
             const resultBody = JSON.parse(await result.text());

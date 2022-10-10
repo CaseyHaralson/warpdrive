@@ -5,6 +5,7 @@ import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import { GetServerSideProps } from "next";
 import { useState, useRef, useEffect } from "react";
 import stocksStyles from '../styles/stocks.module.css';
+import { APP_GRAPHQL_SERVER_URI } from "../app.config";
 
 // exported as default
 function StocksPage({ stockData }) {
@@ -179,7 +180,7 @@ function LoadStock({ clearFilterText, reloadPageStockData }) {
 
 async function getStockData(symbol?: String) {
     const client = new ApolloClient({
-        uri: 'http://localhost:3000/api/graphql',   // TODO: this should be moved to an environment variable or something
+        uri: APP_GRAPHQL_SERVER_URI,
         cache: new InMemoryCache()
     });
 
