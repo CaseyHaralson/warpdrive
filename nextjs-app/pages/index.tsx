@@ -37,7 +37,7 @@ function Home() {
         </h1>
 
         <div className={styles.description}>
-          Next.js with Apollo (Client & <del ref={tooltipRef}>Server</del>) and Graphql Yoga meets Python Flask
+          Next.js with Apollo (Client & <del ref={tooltipRef}>Server</del>) and GraphQL Yoga meets Python Flask
           <div>
             <small>
               Even 
@@ -66,8 +66,8 @@ function Home() {
           <Link href='/api/graphql'>
             <a className={styles.card}
               target='_blank' rel='noopener noreferrer'>
-              <h2>Graphql Server &rarr;</h2>
-              <p>Play with the graphql server api.</p>
+              <h2>GraphQL Server &rarr;</h2>
+              <p>Play with the GraphQL server api.</p>
             </a>
           </Link>
         </div>
