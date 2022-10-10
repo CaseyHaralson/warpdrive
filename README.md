@@ -12,7 +12,7 @@ The UI exposes two different pages:
 
 The app also uses Bootstrap for most of the styling and for some javascript things (tooltip and modal window).
 
-## Python App
+## Python Flask App
 The Python app exposes one Flask api for scraping stock data and saving it to the database.
 
 ## Database
