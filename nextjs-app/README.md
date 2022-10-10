@@ -1,4 +1,5 @@
 ## Getting Started
+The following steps assume you already have node installed on your machine.
 
 First, install the dependencies:
 
